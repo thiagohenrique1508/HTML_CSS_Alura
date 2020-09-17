@@ -159,6 +159,8 @@ td, th{
 	font-size: 2em; /* Quer dizer que vai ser 2x o tamanho base da fonte */
 	margin: 0 0 1em;
 	clear: left; /* Serve para limpar o float que está na classe .utensilios */
+	/*text-shadow: 2px 2px #ff0000 ;*/
+	/*color: rgba(0,0,0,0.3);*/
 }
 
 /*
@@ -227,6 +229,14 @@ p::first-line{
 
 .imagem-beneficios{
 	width: 60%;	
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0  #000000; 
+	/*box-shadow: 10px 10px 30px 20px  #000000, -10px -10px yellow, -20px 20px rgba(red, 0, 0, 0.5);*/
+}
+
+.imagem-beneficios:hover{
+	opacity: 0.3;
 }
 
 .conteudo-beneficios{
@@ -249,9 +259,17 @@ p::first-line{
 .beneficios{
 	padding: 3em 0;
 	background: #888888;
+	/*box-shadow: inset 0 0 20px #ff0000;*/
 }
 
 .video{
 	width: 560px;
 	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+	body{
+		background: red;
+	}
+
 }
